@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="testqrcode.amy.com.testqrcode.MainActivity">
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="org.mobiletrain.qrwriter.MainActivity"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+</RelativeLayout>>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="生成二维码"
+        android:id="@+id/bt_createqrcode"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:hint="请输入要生成二维码的url"
+    android:id="@+id/et_createqrcode"
+    android:layout_toLeftOf="@+id/bt_createqrcode"
+    />
+    <ImageView
+        android:id="@+id/im_qrcode"
+        android:layout_width="256dp"
+        android:layout_height="256dp"
+        android:layout_below="@+id/bt_createqrcode"
+        android:layout_marginTop="20dp"/>
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/im_qrcode"
+    android:id="@+id/bt_scannerqrcode"
+    android:text="扫描二维码"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/im_qrcode"
+        android:id="@+id/bt_scannerqrcode2"
+        android:text="识别上图二维码"
+       android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/bt_scannerqrcode"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_scannerqrcode"
+        android:layout_below="@+id/bt_scannerqrcode"/>
+</RelativeLayout>
